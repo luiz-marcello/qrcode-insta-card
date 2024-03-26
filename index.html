@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Ista Card</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <!-- CARD -->
+        <div class="card-container animate__animated animate__bounceInDown">
+            <!-- QR Code -->
+            <div class="qrcode-container">
+                <img class="qrcode" src="images/qrcodeBez.jpeg" alt="QR Code Da Jornada de Programador">
+            </div>
+            <!-- Botões de Compartilhar e Link -->
+            <div class="button-container">
+                <!-- Botão de Compartilhar -->
+                <button id="compartilhar-perfil-button" class="button">
+                    <img src="images/icone-compartilhar.png" alt="icone de compartilhar">
+                    <span>Compartilhar perfil</span>
+                </button>
+                <!-- Botão de Copiar Link -->
+                <button id="copiar-link-btn" class="button" onclick="copiarLink()">
+                    <img src="images/icone-link.png" alt="icone de copiar link">
+                    <span id="copiar-link-text">Copiar link</span>
+                </button>
+            </div>
+            <h1>
+                CONHEÇA <br/>
+                <strong>Luiz<br/>Marcello</strong>
+             </h1>
+             <div>
+                <img class="foguete" src="images/foguete.png" alt="incone de foguete">
+             </div>
+        </div>
+    </main>
+    <script src="scripts/events.js"></script>
+</body>
+</html>
